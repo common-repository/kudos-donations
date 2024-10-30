@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "iseardmedia/kudos-button",
+  "title": "Kudos Donations",
+  "category": "widgets",
+  "description": "Adds a configurable Kudos donate button or form.",
+  "textdomain": "kudos-donations",
+  "keywords": [
+    "kudos",
+    "button",
+    "donate"
+  ],
+  "supports": {
+    "align": false,
+    "customClassName": true,
+    "typography": {
+      "fontSize": false
+    }
+  },
+  "example": {
+    "attributes": {
+      "label": "Donate now!"
+    }
+  },
+  "attributes": {
+    "button_label": {
+      "type": "string",
+      "default": "Donate now"
+    },
+    "campaign_id": {
+      "type": "string",
+      "default": ""
+    },
+    "type": {
+      "type": "string",
+      "default": "button"
+    }
+  },
+  "editorScript": "file:index.js",
+  "style": "file:kudos-fonts.css",
+  "script": "file:kudos-front.js"
+}
